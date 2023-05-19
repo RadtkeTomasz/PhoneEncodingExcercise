@@ -46,6 +46,10 @@ namespace WebApplication1.Models.Helpers
                 {
                     sb.Append('[').Append(value).Append(']');
                 }
+                else
+                {
+                    sb.Append('#');
+                }
             }
             var result = sb.ToString();
             var encodedString = new InputString();

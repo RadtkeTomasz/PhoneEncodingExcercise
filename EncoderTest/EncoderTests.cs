@@ -6,7 +6,12 @@ using System.Threading.Tasks;
 
 namespace EncoderTests
 {
-    internal class EncoderTests
+    public class EncoderTests
     {
+        [Fact]
+        private void Encodes_A_Name()
+        {
+
+        }
     }
 }
