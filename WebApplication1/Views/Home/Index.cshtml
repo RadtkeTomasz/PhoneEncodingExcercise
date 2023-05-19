@@ -1,0 +1,15 @@
+﻿@using WebApplication1.Models.VievModels;
+@{
+    ViewData["Title"] = "Home Page";
+}
+@model InputString
+
+<div class="text-center">
+    <h1 class="display-4 my-3">Welcome, input the desired text</h1>
+    <form asp-action="CodeMyInput" asp-controller="Home" method="post" class="my-3">
+        <label asp-for="@Model.Text">The text you want to encode for old phone keyboard</label>
+        <input asp-for="@Model.Text" class="form-control my-3" />
+        <button type="submit" class="btn-success btn my-3" value="Encode it!">Encode it!</button>
+    </form>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
